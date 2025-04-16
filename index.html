@@ -136,13 +136,49 @@
       color: #666;
     }
 
+    /* ✅ 모바일 텍스트 크기 조절만 반영 */
     @media screen and (max-width: 768px) {
-      .hero-text h1 { font-size: 2.5rem; }
-      .hero-text p { font-size: 1.1rem; }
-      .section h2 { font-size: 1.5rem; }
-      .section p { font-size: 1rem; }
-      .gallery img { aspect-ratio: 4/5; }
-      .contact-info { font-size: 1.8rem; }
+      .hero-text {
+        top: 60%;
+        transform: translate(-50%, -60%);
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        padding: 0 1rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 1.5rem;
+      }
+
+      .section h2 {
+        font-size: 1.4rem;
+      }
+
+      .section p {
+        font-size: 1rem;
+      }
+
+      .gallery img {
+        aspect-ratio: 4/5;
+      }
+
+      .contact-info {
+        font-size: 1.6rem;
+      }
+
+      .contact h3 {
+        font-size: 1.5rem;
+      }
+
+      .contact p,
+      .contact a {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -180,8 +216,8 @@
   </section>
 
   <section class="contact">
-    <h3 style="font-size: 2.5rem;">예약 및 문의</h3>
-    <p style="font-size: 1.3rem;">
+    <h3>예약 및 문의</h3>
+    <p>
       위치: <a href="https://map.naver.com/p/entry/place/37744484?c=15.00,0,0,0,dh" target="_blank" style="color:#ffdd88; text-decoration:underline;">
         인천 연수구 용담로 87 티파니빌딩
       </a><br />
