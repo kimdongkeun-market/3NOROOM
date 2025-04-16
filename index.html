@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>쓰리노 노래클럽</title>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Do Hyeon', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      color: #ffe082;
+      text-shadow:
+        0 0 10px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #ffecb3;
+      text-shadow:
+        0 0 8px rgba(0, 0, 0, 0.7),
+        0 0 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .section {
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .contact-info {
+      font-size: 2.2rem;
+      color: #e6c200;
+      margin-top: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 12px rgba(255, 255, 100, 0.5);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .contact {
+      background-color: #111;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+      .section p {
+        font-size: 1rem;
+      }
+      .gallery img {
+        aspect-ratio: 4/5;
+      }
+      .contact h3 {
+        font-size: 1.4rem;
+      }
+      .contact p {
+        font-size: 1rem;
+      }
+      .contact a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+      .contact-info {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="images/hero.png" alt="메인 이미지" class="hero-img" />
+    <div class="hero-text">
+      <h1>3NO 노래클럽</h1>
+      <p>극강의 마인드, 지금까지 없던 새로운 경험</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>인천 최고의 사이즈 - 강남 텐프로 사이즈 - 무제한 초이스</h2>
+    <p>혼자 와도, 여럿이 와도 좋은 곳.<br />
+    당신의 밤을 특별하게 만들어줄 단 하나의 선택 — 쓰리노.</p>
+    <div class="contact-info">
+      연수동 김부장 <a href="tel:01079058178" style="color: #ffffff; font-weight: bold; text-decoration: underline;">📞 010-7905-8178</a>
+    </div>
+  </section>
+
+  <div class="gallery">
+    <img src="images/gallery1.png" alt="갤러리 이미지 1" />
+    <img src="images/gallery2.png" alt="갤러리 이미지 2" />
+    <img src="images/gallery3.png" alt="갤러리 이미지 3" />
+  </div>
+
+  <section class="section">
+    <h2>극강의 마인드, 타협 없는 퀄리티</h2>
+    <p>수준 높은 매니지먼트와 서비스,<br />
+    고객의 만족만을 최우선으로 생각합니다.</p>
+    <div class="contact-info">
+      연수동 김부장 <a href="tel:01079058178" style="color: #ffffff; font-weight: bold; text-decoration: underline;">📞 010-7905-8178</a>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3 style="font-size: 2.5rem;">예약 및 문의</h3>
+    <p style="font-size: 1.3rem;">
+      위치: <a href="https://map.naver.com/p/entry/place/37744484?c=15.00,0,0,0,dh" target="_blank" style="color:#ffdd88; text-decoration:underline;">
+        인천 연수구 용담로 87 티파니빌딩
+      </a><br />
+      운영시간: 오후 6시 ~ 새벽 6시<br />
+      예약전화: <a href="tel:01079058178" style="color: #ffccdd; text-decoration: underline;">010-7905-8178</a>
+    </p>
+    <a href="tel:01079058178" style="font-size: 1.2rem;">전화걸기</a>
+  </section>
+
+  <footer>
+    &copy; 2025 쓰리노 노래클럽. All Rights Reserved.
+  </footer>
+</body>
+</html>
