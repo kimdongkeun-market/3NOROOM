@@ -49,49 +49,58 @@
       font-family: 'Do Hyeon', sans-serif;
       overflow-x: hidden;
     }
+
     .hero {
       position: relative;
-      width: 100%;
-      height: auto;
-      max-height: 800px;
+      height: 100vh;
       overflow: hidden;
     }
+
     .hero-img {
       width: 100%;
-      height: auto;
-      max-height: 100vh;
-      object-fit: cover;
-      display: block;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
+
     .hero-text {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+      color: #fff;
       text-align: center;
     }
+
     .hero-text h1 {
       font-size: 4rem;
-      color: #ffe082;
-      text-shadow: 0 0 10px rgba(0,0,0,0.8);
       font-family: 'Playfair Display', serif;
+      color: #ffe082;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
     }
+
     .hero-text p {
       margin-top: 1rem;
       font-size: 1.5rem;
       color: #ffecb3;
-      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.7), 0 0 12px rgba(0, 0, 0, 0.5);
     }
+
     .section {
       padding: 5rem 1.5rem;
       text-align: center;
     }
+
     .section h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #ffd700;
     }
+
     .section p {
       font-size: 1.2rem;
       max-width: 800px;
@@ -99,19 +108,22 @@
       line-height: 1.8;
       color: #ddd;
     }
+
     .contact-info {
       font-size: 2.2rem;
       color: #e6c200;
       margin-top: 2rem;
       font-weight: bold;
-      text-shadow: 0 0 12px rgba(255,255,100,0.5);
+      text-shadow: 0 0 12px rgba(255, 255, 100, 0.5);
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
       padding: 2rem;
     }
+
     .gallery img {
       width: 100%;
       aspect-ratio: 4/5;
@@ -119,14 +131,17 @@
       border-radius: 1rem;
       transition: transform 0.3s ease;
     }
+
     .gallery img:hover {
       transform: scale(1.03);
     }
+
     .contact {
       background-color: #111;
       padding: 3rem 1rem;
       text-align: center;
     }
+
     footer {
       background: #111;
       text-align: center;
@@ -134,27 +149,51 @@
       font-size: 0.9rem;
       color: #666;
     }
-    .call-button {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: gold;
-      color: black;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      z-index: 9999;
-    }
+
     @media screen and (max-width: 768px) {
-      .hero-text h1 { font-size: 1.6rem; }
-      .hero-text p { font-size: 0.95rem; }
-      .contact-info { font-size: 1.4rem; }
-      .call-button { font-size: 14px; padding: 10px 20px; }
+      .hero-text {
+        top: 58%;
+        transform: translate(-50%, -58%);
+      }
+
+      .hero-text h1 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+      }
+
+      .hero-text p {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+        padding: 0 1.2rem;
+      }
+
+      .section h2 {
+        font-size: 1.2rem;
+      }
+
+      .section p {
+        font-size: 0.95rem;
+      }
+
+      .gallery img {
+        aspect-ratio: 4/5;
+      }
+
+      .contact-info {
+        font-size: 1.4rem;
+      }
+
+      .contact h3 {
+        font-size: 1.3rem;
+      }
+
+      .contact p,
+      .contact a {
+        font-size: 0.95rem;
+      }
     }
+
   </style>
 </head>
 <body>
@@ -226,4 +265,5 @@
   <a href="tel:01079058178" class="call-button">📞 010-7905-8178 전화걸기</a>
 </body>
 </html>
+
 
