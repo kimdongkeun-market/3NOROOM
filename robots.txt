@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kimdongkeun-market.github.io/3NOROOM/sitemaps.xml
+Sitemap: https://kimdongkeun-market.github.io/3NOROOM/sitemap.xml
