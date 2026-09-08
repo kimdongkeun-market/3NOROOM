@@ -5,7 +5,7 @@
     const link = event.target.closest('a[href^="tel:"]');
     if (!link) return;
     const payload = {
-      site: "3noroom",
+      site: "github-karaoke",
       page: location.pathname,
       source: params.get("utm_source") || document.referrer || "direct",
       medium: params.get("utm_medium") || "none",
